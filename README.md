@@ -164,7 +164,9 @@ React.Fragment vs custom (Aux) component
 - c/p project description from Google doc to README.md directly in GH editor as a test. Found out .md (markdown) files has special syntax so all formatting is gone.
 - `git fetch` to pull remote repo.
 - `git diff master origin/master` - where master = local branch and origin/master = remote repo-name/branch
+- `git pull --ff-only origin/master` origin/master can be excluded if the local master branch has been configured to track the origin/master branch with: `git push -u origin master` 
+> Notice we used the -u flag. That flag sets the upstream repo, which causes our local master branch to track the master branch on the remote repo which is aliased as origin. We can now use just the git push command and it will know where to push it, because we set our upstream branch.   
 
-Further reading: [launchscool.com](https://launchschool.com/books/git/read/github), [github docs](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) (adding new ssh key), `ssh-keygen` locally in ['random useful notes'](https://docs.google.com/document/d/1mD3vaZ1OY_mUfYhXqzQM-5vIt14JfajU-0YhtiHvLS0/edit#heading=h.ulecwdd5ysvj)
+- Further reading: [launchscool.com](https://launchschool.com/books/git/read/github), [github docs](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) (adding new ssh key), `ssh-keygen` locally in ['random useful notes'](https://docs.google.com/document/d/1mD3vaZ1OY_mUfYhXqzQM-5vIt14JfajU-0YhtiHvLS0/edit#heading=h.ulecwdd5ysvj)
 
 
