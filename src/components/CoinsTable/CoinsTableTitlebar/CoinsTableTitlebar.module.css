@@ -1,0 +1,14 @@
+.item {
+  overflow: hidden;
+  border: 1px solid gray;
+
+  padding: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 600;
+}
+
+.justifyEnd {
+  justify-self: end;
+}
+

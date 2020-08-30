@@ -1,0 +1,15 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+
+  /* border: 1px solid orange; */
+  grid-gap: 5px;
+  min-width: 940px;
+
+  /* overflow-y: hidden; */
+
+}
+
+.gridContainer p {
+  /* font-size: 0.93rem; */
+}

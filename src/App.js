@@ -1,19 +1,12 @@
 import React, { Component } from 'react';
 
-const cmcApiKey = process.env.REACT_APP_cmc_api_key;
+import Layout from './hoc/Layout/Layout';
 
-const cmcApiUrl = 'https://pro-api.coinmarketcap.com?';
 
-const endpoint = 'CMC_PRO_API_KEY';
 
-console.log('cmcApiKey', typeof cmcApiKey, cmcApiKey);
-
-class App extends React.Component {
-
+class App extends Component {
   render() {
-    return <div>Div in App comp
-      <div></div>
-    </div>;
+    return <Layout></Layout>;
   }
 }
 

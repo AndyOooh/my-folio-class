@@ -1,0 +1,18 @@
+.Logo {
+  display: grid;
+  justify-content: left;
+  /* background-color: rgba(255, 113, 113, 0.377); */
+  /* border: 1px solid rgb(0, 0, 0); */
+  
+  /* padding: 0 8px; */
+  border-radius: 5%;
+  /* align-self: center; */
+  /* box-sizing: border-box; */
+}
+
+
+.Logo img {
+  /* border: 1px solid rgb(0, 0, 0); */
+  max-width: 100%;
+  max-height: 50px;
+}

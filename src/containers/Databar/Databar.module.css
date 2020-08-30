@@ -1,0 +1,47 @@
+.tcontainer {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 1px solid rgb(0, 38, 255);
+}
+
+.twrap {
+  width: 100%;
+  padding-left: 100%;
+  /* display: inline-block; */
+  background-color: rgba(141, 67, 67, 0.253);
+  height: 100%;
+}
+
+.tmove {
+  display: grid;
+  grid-template-columns: repeat(auto-fill);
+  grid-auto-flow: column;
+  grid-gap: 0 15px;
+  height: 100%;
+  /* justify-items: baseline; */
+  align-items: center;
+  /* width important (why?) */
+  width: min-content;
+  /* border: 2px solid rgb(94, 255, 0); */
+
+  white-space: nowrap;
+  /* padding-right: 100%; */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 70s;
+}
+
+.tmove:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}

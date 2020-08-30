@@ -1,0 +1,48 @@
+.LaoyoutItem {
+  overflow-y: scroll;
+  /* moving the scrollbar outside of our Layout (80%) */
+  box-sizing: content-box;
+  width: 100%;
+  padding-right: 17px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.LaoyoutItem::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.LaoyoutItem {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.title {
+  text-align: center;
+  margin: 1.5rem;
+
+  animation-name: moveInLeft;
+  animation-duration: 5s;
+
+  /* animation-delay: 2s; */
+  /* animation-iteration-count: 2; */
+  /* animation-timing-function: linear; */
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+    color: pink;
+  }
+
+  80% {
+    color: pink;
+    transform: translateX(10%) rotate(360deg);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}

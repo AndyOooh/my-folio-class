@@ -1,0 +1,32 @@
+const state = {
+0:{
+circulating_supply: 18468912,
+cmc_rank: 1,
+date_added: "2013-04-28T00:00:00.000Z",
+id: 1,
+last_updated: "2020-08-23T17:56:15.000Z",
+market_cap: 215301842474.41495,
+max_supply: 21000000,
+name: "Bitcoin",
+percent_change_1h: 0.0616957,
+percent_change_7d: -1.51523,
+percent_change_24h: 0.429203,
+platform: null,
+price: 11657.5271177,
+slug: "bitcoin",
+symbol: "BTC",
+tags: Array(5),
+0: "mineable",
+1: "sha-256",
+2: "state-channels",
+3: "pow",
+4: "store-of-value",
+length: 5,
+__proto__: Array(0),
+total_supply: 18468912,
+volume_24h: 17864899312.4684,
+__proto__: Object,
+// 1: {id: 1027, name: "Ethereum", symbol: "ETH", slug: "ethereum", num_market_pairs: 5599, …},
+volume_24h: 17763911335.3878
+}
+}

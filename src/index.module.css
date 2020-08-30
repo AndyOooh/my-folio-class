@@ -1,7 +1,31 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Open sans', sans-serif;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: 'Open sans', sans-serif;
+  /* font-size-adjust: 100%; may have been a auto-correct error */
+}
+
+@media (max-width: 414px) {
+  p {
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 414px) {
+  p {
+    font-size: calc(8px + (16 - 8) * ((100vw - 414px) / (1440 - 414)));
+  }
+}
+
+@media (min-width: 1480px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 
 
